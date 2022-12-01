@@ -1,0 +1,159 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage{geometry}
+\addbibresource{refs.bib} %Imports bibliography file
+
+\begin{document}
+
+\newgeometry{right=0.5in,left=0.5in}
+\title{\textbf{Cybersecurity in Härnösand Municipality} \\
+               An interview with Henrik Bjerneld}
+\author{Daniel Williams -- dwilli@kth.se \\
+        Zakaria Sabbagh -- zsabbagh@kth.se}
+\date{November 2022}
+
+\maketitle
+\restoregeometry
+\newpage
+
+\section{Background and Methodology}
+In order to learn about the practical side of cybersecurity, we interviewed Henrik Bjerneld, who works in Härnösand municipality as a "Information Security Coordinator and Data Security Ombudsman". 
+The interview took place on the 22nd of November 2022 between 11:00 and 11:40 a.m., and was held through the digital meeting platform Zoom. The interview was semi-structured, consisting out of mostly pre-written questions but also a few others that felt relevant to the topic at hand, and was thus recorded (with proper consent) alongside taking notes in order to provide the best possible interviewing experience for both ourselves and Mr. Bjerneld.
+\\
+\\
+Regarding the questions themselves, they started off quite general inquiring about Bjerneld's role within the municipality and how they work, and continued into more cybersecurity-specific questions and how working with it in practice differs from the theoretical knowledge we obtain during our education.
+During the interview, Bjerneld highlighted the difference between working in a municipality rather than a private company.
+This was one of the core findings concerning this interview.
+
+\section{Result}
+\textit{What did you learn?}
+
+\begin{enumerate}
+    \item Difference between information-, IT- and cyber (start)
+    There is a separation between the concepts of information-, IT- and cybersecurity within the municipality.
+Information security concerns everything concerning information, and in a similar way IT security regards to IT.
+However, cybersecurity concerns the antagonistic threats towards information and IT systems within the organisation
+    \item Offentliga handlingar / offentlighetsprincipen (05:30).
+    The principle of public records, which states that every document or record by principle should be available on demand to the public, to a reasonable extent.
+    There is secrecy incorporated into the law of which states the previous, and in the public sector, there is a strive to accomplish good service.
+    In addition and in parallel to the digital development, there are ambitions to share data, not only within a municipality, but also amongst other entities such as other municipalities and regions or the government.
+    \item Handskandet av data -- problem av ovanstående. (06:22)
+    It is not always the case, however, that people have it as an intuition of how certain data should be treated appropriately.
+    Before data is handed to another party, it is secrecy "tested" (pröva).
+    When something is deemed not appropriate for sharing, it is stated according to certain instructions and regulations of why the decision has been made.
+    This thought is usually present when sharing files, documents, or other potentially sensitive data.
+    However, it is not always the case with integrated systems, and usually are then missed.
+    % 07:20
+    This is why classification of data is important, which implies what level of security is appropriate for the data in question.
+    Beyond the reach of technology, classification gives personnel instructions of what actions are needed to be made to secure the data.
+    It is important to note what abilities are needed to be fulfilled, e.g. detect when some breach has occurred.
+    This is where an incident response team becomes highly relevant.
+    \item Cost and 24/7, risks. (09:50)
+    
+    Threat actors do not rest, %which is why alertness and reactivity is paramount to incorporate on an organisational level.
+    and thus being able to accurately detect and efficiently act on incidents is vital -- not just in terms of availability but also to preserve confidentiality and integrity.
+    However, there is a high cost involved in treating security incidents, especially when the organisation in question is and should be available at any time.
+    A municipality has other foundational missions, which do not necessarily include security perspectives.
+    This implies financial balancing, and where the economy is not sufficient, this could enfold as risks.
+    These risks must be handled, which might be an area of which municipal work could be seen as immature in light of more established organisations.
+    %\item Samarbeta med andra kommuner för att få ner kostnader etc (bra!)
+    %\item [Jag skriver denna direkt i det befintliga stycket] Detect and act on incidents (in the 24/7 paragraph). Ekonomiska svårigheter för små kommuner som kanske behöver prioritera annat (runt 11:30)
+    %Nowadays, most services are constantly running no matter the day or the time. However, for a municipality this is especially important as they may provide services that are of greater importance than those of, say, facebook or YouTube.
+    
+    %Such a service then also requires functioning IT systems which are a prerequisite for efficiency and availability.
+    As a result, the costs of maintaining IT are high, particularly when the municipality is a smaller one without the same economic possibilities as bigger ones.
+    % ~10:00 and onwards (cooperation)
+    For this reason, it is common for multiple smaller municipalities to come together and help each other in discovering and/or acting on breaches.
+    However, this may present difficulties as people in different municipalities can have very different ideas of how to combat cyber threats (what tech etc). Discrepancies in opinions.
+    %Thus, they could end up being not enough if a crisis occurs in forms of an attack.
+    % Detect and act on incidents (in the 24/7 paragraph). Ekonomiska svårigheter för små kommuner som kanske behöver prioritera annat 
+    
+    \item Ledamöter tittar mer på tidningsrubriker än (vad?) (14:00)
+    There is a significant difference between cybersecurity in a municipality, i.e. working for the Swedish state, compared to working within a private company.
+    The biggest difference lies in the fact that there is a frequent and inevitable factor of organisational change within the municipality: elections.
+    Each election, administrative positions are taken by new politicians, leading to challenges in preserving and holding on to knowledge within the field of security.
+    It is important that the people in the lead and responsible for making decisions are aware of the challenges posed by cyber threats.
+    One of the most difficult parts is making people aware of the severity of which cyber attacks could affect the victim.
+    It is not until the work on plan for continuity of service, i.e. making the organisation functioning although their belonging IT systems are affected and made unavailable, that people realise that they are totally dependent on them.
+    \item Kontinuitetsplaner ÖVA på dem eller så är man körd ändå (mer runt 16:30)
+    \item Confidentiality, integrity and availability very important, but availability often takes precednece IRL, e.g. no integrity can have disastrous effects as automatic systems may make the wrong decisions based on some changed variables
+    \item hard to grasp consequences for your own business (verksamhet) until an attack actually takes place
+    \item IT often uses ISO 27000, lots of GDPR (be able to list your supply chain (?))
+    \item everyone listing their entire supply chains would make things a \textit{lot} easier when it comes to transparency higher up in the chain.
+    An attack on one part of the supply chain could often lead to problems and possible exploitation of other parts within the chain.
+    \item put threats in "normal" terms, don't explain vuln specifics and say that "buffer overflow can cause arbitrary code execution!!" and instead say things like "someone may steal our bookkeeping and crash our retail systems!"
+\end{enumerate}
+
+(17:00) Business continuity plans are core for maintaining security within organisations, i.e. how an organisation could remain active although their IT systems or other key functionality are made unavailable.
+For politics, usually when discussing cyber security, one highlight problems concerning availability, and easily forget the aspect of confidentiality.
+Although a system might still be available, breaking confidentiality have other impacts on an organisation.
+\\
+\\
+The municipality usually make budgets two years ahead, which adds another factor of difficulty for the ones responsible for security.
+Predicting the costs of which cyber attacks might lead to in the coming years are inevitably hard, and furthermore the balance of how big budget is necessary to prevent all the possible tasks, is something incredibly hard.
+Usually, cybersecurity is not directly included in the budget for each municipality, which causes problems for having the resources necessary for maintaining availability.
+
+\section{Discussion and Conclusion}
+% What was the most interesting finding? Where there any surprises? Did the informant say anything that contradicts what you have learned in courses, from practical experience, or from other practitioners? Can you explain such discrepancies? Do your findings suggest interesting future work?
+One of the most interesting findings was the fact that cybersecurity in a municipality is affected by the election -- a fundamental part of democracy.
+This further establishes the importance of electing people knowledgeable within their areas of work, and even more so enlightens the fact that politicians must listen and learn by the experts within the areas in question.
+Not interfering and basing decisions on media as sole source is a big mistake.
+Usually it is too late to act upon some cyber threat when media and the public has knowledge about it -- an attack has most likely already started.
+\\
+\\
+It has further been clarified that the cost of security is very high.
+This is problematic, as the cost of having insufficient defense could be even higher.
+The difficulty of balancing the budget for a municipality seems like an immensely difficult task, especially when considering the case of predicting the costs of cyber attacks and data breaches.
+Taking crisis into account when establishing a budget is not often the case, which would lead to problems when a crisis occurs.
+This could be another area for future studies -- researching the effect and the proportion of which governmental organisations prioritise and keep resources available for sufficient security.
+\\
+\\
+It becomes an additionally interesting topic when considering the perspective of which Bjerneld highlights -- the fact that a municipality needs to be available at any time, and that threat actors do not rest.
+This puts emphasis on the importance of having an incident response team and IT support available at any time thoroughly needed.
+For example, during election, any IT or information used needs to be functioning in the extent that it does not affect the election.
+\\
+\\
+Another aspect of great significance was the one concerning supply chains common lack of transparency.
+It is not too uncommon that the dependency of each actor in a supply chain is not completely obvious.
+Many organisations might be more dependent on their supplier than expected, and as a result, a cyber attack on the supplier could mean downtime for the organisation itself.
+This enlightens the importance of constituting this fact further, and spreading this knowledge.
+For this reason, it would be a good area of further studies, as this is a society wide issue.
+Pointing out dependencies of certain nature would be a great way of proving the importance of enforcing cyber defence for certain actors.
+\\
+\\
+The informant did not contradict the course content, rather the contrary -- Bjerneld enforced the knowledge learnt within this course.
+It has specifically been clarified the importance of business continuity plans.
+Making an organisations activity not completely depend on IT is an important point of ones business, to not risk being out of business when a crisis occurs.
+Not only is this important in the light of cyber threats, but also other natural phenomenons which might cut power supply for the hardware of which requires it.
+\\
+\\
+For future work, it would be interesting in analysing the actual effects of an election on not only cyber security, but information security in a whole.
+Going deeper into this field has a political significance -- making people aware of what kind of effects an election might have.
+Though, as known, it is easier to point fingers at the one in charge rather than being the decision maker.
+
+\printbibliography
+
+\newpage
+
+\section{TODO: Go through and correct. Appendix: Interview questions}
+\begin{enumerate}
+    \item Är det OK att vi spelar in denna intervju?
+    \item Var arbetar du någonstans, d.v.s. vad heter organisationen?
+        1. Härnösands kommun, informationssäkerhetssamordnare och dataskyddsombud
+    \item Vad är din formella roll, titel? Vad innebär den?
+    \item Hur relaterar din roll till cybersäkerhet?
+    \item Arbetar du med incidentrespons, patchande, organiserar du penetrationstesting?
+    \item Utgör ni ett team med säkerhet, dvs är ni fler som du arbetar i grupp med?
+    \item *** OMFORMULERA *** Svårigheter?
+    \item Hur är det att arbeta med säkerhet i en organisation där säkerhet inte är den enda uppgiften?
+    \item Tror du att det är/är det någon skillnad på att jobba med cybersäkerhet inom en kommun jämfört med ett privat företag?
+    \item Förstår människorna kring dig allvarligheten och signifikansen av säkerhet inom IT?
+    \item Finns det svårigheter att förmedla cybersäkerhetens vikt ibland? 
+    \item Blir det ibland så att säkerheten inte prioriteras? Att olika nödvändiga saker inte görs på grund av andra intressen? Vad beror detta på?
+    \item Använder du några ramverk eller standarder?
+    \item Hur håller du dig uppdaterad till de nyaste cyberhoten?
+        1. Inget svar p.g.a. tidsbrist
+    \item Är det någonting du skulle vilja lägga till, som du tror kan vara relevant för oss att veta? D.v.s., har vi glömt någonting?
+\end{enumerate}
+\end{document}
